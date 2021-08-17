@@ -12,13 +12,25 @@ export default createTheme({
     h1: {
       fontSize: '3rem',
       fontWeight: 600,
+      marginBottom: '0.35em',
     },
     h2: {
       fontSize: '2rem',
       fontWeight: 600,
+      marginBottom: '0.35em',
+    },
+    h3: {
+      fontSize: '1.5rem',
+      fontWeight: 600,
+      marginBottom: '0.35em',
     },
     body1: {
       fontSize: '1rem',
+      marginBottom: '1em',
+    },
+    body2: {
+      fontSize: '0.875rem',
+      marginBottom: '1em',
     },
   },
   palette: {
@@ -36,21 +48,44 @@ export default createTheme({
     },
   },
   overrides: {
-    // Typography
-    MuiTypography: {
-      h1: {
-        marginBottom: '0.35em',
-      },
-      body1: {
-        marginBottom: '1em',
-      },
-    },
     // Button
     MuiButton: {
       outlined: {
-        padding: '0.3125rem 1.5rem',
+        padding: '0.5rem 1.5rem',
         fontSize: '.875rem',
         textTransform: 'initial',
+      },
+      contained: {
+        padding: '0.5rem 1.5rem',
+        fontSize: '.875rem',
+        textTransform: 'initial',
+        whiteSpace: 'nowrap',
+      },
+      containedPrimary: {
+        color: 'white',
+      },
+    },
+    // Input
+    MuiInputBase: {
+      root: {
+        marginBottom: 0,
+      },
+    },
+    MuiTextField: {
+      root: {
+        marginBottom: '1.25rem',
+      },
+    },
+    MuiOutlinedInput: {
+      input: {
+        padding: '11.5px 14px',
+        fontSize: '.875rem',
+      },
+    },
+    MuiInputLabel: {
+      outlined: {
+        fontSize: '.875rem',
+        transform: 'translate(14px, 13px) scale(1)',
       },
     },
   },
