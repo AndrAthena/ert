@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -6,14 +5,15 @@ import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from '@material-ui/styles';
 import { CssBaseline } from '@material-ui/core';
 import theme from './Theme/theme';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Router>
+    <CssBaseline />
     <ThemeProvider theme={theme}>
-      <CssBaseline />
       <App />
     </ThemeProvider>
-  </React.StrictMode>,
+  </Router>,
   document.getElementById('root'),
 );
 
