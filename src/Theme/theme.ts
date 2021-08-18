@@ -26,11 +26,9 @@ export default createTheme({
     },
     body1: {
       fontSize: '1rem',
-      marginBottom: '1em',
     },
     body2: {
       fontSize: '0.875rem',
-      marginBottom: '1em',
     },
   },
   palette: {
@@ -48,6 +46,11 @@ export default createTheme({
     },
   },
   overrides: {
+    MuiTypography: {
+      root: {
+        fontFamily: "'Poppins', sans-serif",
+      },
+    },
     // Button
     MuiButton: {
       outlined: {
@@ -86,6 +89,11 @@ export default createTheme({
       outlined: {
         fontSize: '.875rem',
         transform: 'translate(14px, 13px) scale(1)',
+      },
+    },
+    MuiFormControlLabel: {
+      label: {
+        fontSize: '0.875rem',
       },
     },
   },
