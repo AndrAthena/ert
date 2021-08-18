@@ -7,19 +7,22 @@ import GoogleLoginButton from '../../Common/GoogleLoginButton';
 import { GOOGLE_CLIENT_ID } from '../../../constants/config';
 import FacebookLoginButton from '../../Common/FacebookLoginButton/FacebookLoginButton';
 import Illustration from '../../../assets/images/signup.svg';
+import stl from './style';
 
 const Signup: FC = () => {
+  const cls = stl();
+
   return (
     <>
       <SEO title="Sign Up" />
-      <div className="container h-100">
+      <div className={`${cls.signup} container h-100`}>
         <div className="row h-100">
-          <div className="col-md-6 d-flex justify-content-center align-items-center">
-            <div className="p-5">
+          <div className="col-lg-6 d-lg-flex d-none">
+            <div className={`${cls.imgContainer} w-100 p-lg-5`}>
               <img src={Illustration} alt="Signup illustration" role="presentation" />
             </div>
           </div>
-          <div className="col-md-6 d-flex flex-column">
+          <div className="col-lg-6 d-flex flex-column">
             <FormContainer title="Sign up to RTE" description="Please login to your account" className="m-auto">
               <form>
                 <div className="d-flex align-items-start mb-5">
