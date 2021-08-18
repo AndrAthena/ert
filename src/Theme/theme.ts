@@ -41,8 +41,8 @@ export default createTheme({
       dark: '#61892F',
     },
     secondary: {
-      main: '#36558F',
-      dark: '#1E2836',
+      main: '#3286C2',
+      dark: '#36558F',
     },
   },
   overrides: {
@@ -94,6 +94,11 @@ export default createTheme({
     MuiFormControlLabel: {
       label: {
         fontSize: '0.875rem',
+      },
+    },
+    MuiLink: {
+      root: {
+        color: '#FF725E',
       },
     },
   },
