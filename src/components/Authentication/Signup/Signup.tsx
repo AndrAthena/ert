@@ -1,4 +1,4 @@
-import { Button, Checkbox, Divider, FormControlLabel, TextField } from '@material-ui/core';
+import { Button, Checkbox, Divider, FormControlLabel, TextField, Typography } from '@material-ui/core';
 import { FC } from 'react';
 import SEO from '../../Common/SEO';
 import FormContainer from '../FormContainer';
@@ -8,6 +8,7 @@ import { GOOGLE_CLIENT_ID } from '../../../constants/config';
 import FacebookLoginButton from '../../Common/FacebookLoginButton/FacebookLoginButton';
 import Illustration from '../../../assets/images/signup.svg';
 import stl from './style';
+import CustomLink from '../../Common/CustomLink';
 
 const Signup: FC = () => {
   const cls = stl();
@@ -42,6 +43,12 @@ const Signup: FC = () => {
                   Signup
                 </Button>
                 <Divider variant="fullWidth" className="my-4" />
+                <Typography>
+                  Already have an account ?{' '}
+                  <CustomLink href="/login" style={{ color: '#FF725E' }} underline="hover">
+                    Sign in
+                  </CustomLink>
+                </Typography>
               </form>
             </FormContainer>
           </div>
