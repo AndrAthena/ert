@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ert/static/css/main.b6f8b85d.chunk.css",
-    "main.js": "/ert/static/js/main.c7bbfb11.chunk.js",
-    "main.js.map": "/ert/static/js/main.c7bbfb11.chunk.js.map",
+    "main.js": "/ert/static/js/main.9c55fae1.chunk.js",
+    "main.js.map": "/ert/static/js/main.9c55fae1.chunk.js.map",
     "runtime-main.js": "/ert/static/js/runtime-main.9c059323.js",
     "runtime-main.js.map": "/ert/static/js/runtime-main.9c059323.js.map",
-    "static/js/2.98c0fd24.chunk.js": "/ert/static/js/2.98c0fd24.chunk.js",
-    "static/js/2.98c0fd24.chunk.js.map": "/ert/static/js/2.98c0fd24.chunk.js.map",
+    "static/js/2.5d6da70f.chunk.js": "/ert/static/js/2.5d6da70f.chunk.js",
+    "static/js/2.5d6da70f.chunk.js.map": "/ert/static/js/2.5d6da70f.chunk.js.map",
     "static/js/3.37f82f83.chunk.js": "/ert/static/js/3.37f82f83.chunk.js",
     "static/js/3.37f82f83.chunk.js.map": "/ert/static/js/3.37f82f83.chunk.js.map",
     "index.html": "/ert/index.html",
     "static/css/main.b6f8b85d.chunk.css.map": "/ert/static/css/main.b6f8b85d.chunk.css.map",
-    "static/js/2.98c0fd24.chunk.js.LICENSE.txt": "/ert/static/js/2.98c0fd24.chunk.js.LICENSE.txt",
+    "static/js/2.5d6da70f.chunk.js.LICENSE.txt": "/ert/static/js/2.5d6da70f.chunk.js.LICENSE.txt",
     "static/media/forgot-password.ec5da587.svg": "/ert/static/media/forgot-password.ec5da587.svg",
     "static/media/login.def83611.svg": "/ert/static/media/login.def83611.svg",
     "static/media/password-reset.3f2f9899.svg": "/ert/static/media/password-reset.3f2f9899.svg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9c059323.js",
-    "static/js/2.98c0fd24.chunk.js",
+    "static/js/2.5d6da70f.chunk.js",
     "static/css/main.b6f8b85d.chunk.css",
-    "static/js/main.c7bbfb11.chunk.js"
+    "static/js/main.9c55fae1.chunk.js"
   ]
 }
