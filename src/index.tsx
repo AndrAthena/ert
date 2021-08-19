@@ -6,10 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from '@material-ui/styles';
 import { CssBaseline } from '@material-ui/core';
 import theme from './Theme/theme';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
-  <Router>
+  <Router basename="/">
     <CssBaseline />
     <ThemeProvider theme={theme}>
       <App />
