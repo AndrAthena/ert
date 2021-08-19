@@ -35,7 +35,7 @@ const Signup: FC = () => {
             className="align-items-start"
           />
           <Button type="submit" variant="contained" color="primary" fullWidth>
-            Signup
+            Sign up
           </Button>
           <Divider variant="fullWidth" className="my-4" />
           <Typography>

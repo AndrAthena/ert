@@ -13,10 +13,10 @@ const Splash: FC = () => {
         <title>Bienvenue sur ERT</title>
       </Helmet>
       <Logo />
-      <Typography variant="h1" color="textPrimary" align="center">
+      <Typography variant="h1" color="textPrimary" align="center" gutterBottom>
         Welcome to <span>RTE</span>
       </Typography>
-      <Typography color="textPrimary" align="center">
+      <Typography color="textPrimary" align="center" gutterBottom>
         Create your ads fastly and efficiently.
       </Typography>
       <Button variant="outlined" color="primary">

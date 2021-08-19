@@ -34,7 +34,7 @@ const ForgotPassword: FC = () => {
               fullWidth: true,
             }}
           >
-            Login
+            Sign in
           </CustomLink>
         </form>
       </FormContainer>

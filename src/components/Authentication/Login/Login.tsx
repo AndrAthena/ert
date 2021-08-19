@@ -37,7 +37,7 @@ const Login: FC = () => {
           </div>
 
           <Button type="submit" variant="contained" color="primary" fullWidth>
-            Login
+            Sign in
           </Button>
 
           <Divider variant="fullWidth" className="mt-5 mb-4" />
@@ -51,7 +51,7 @@ const Login: FC = () => {
               color: 'primary',
             }}
           >
-            Signup
+            Sign up
           </CustomLink>
         </form>
       </FormContainer>

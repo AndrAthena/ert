@@ -28,10 +28,10 @@ const FormContainer: FC<FormContainerprops> = ({ title, description, children, c
           <div className={`${cls.formContainer} ${className}`}>
             <Box mb={2} textAlign="center">
               <Logo className={cls.logo} />
-              <Typography variant="h3" color="textPrimary" component="h1" align="center">
+              <Typography variant="h3" color="textPrimary" component="h1" align="center" gutterBottom>
                 {title}
               </Typography>
-              <Typography align="center" color="textPrimary">
+              <Typography align="center" color="textPrimary" gutterBottom>
                 {description}
               </Typography>
             </Box>

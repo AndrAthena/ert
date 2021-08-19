@@ -12,17 +12,14 @@ export default createTheme({
     h1: {
       fontSize: '3rem',
       fontWeight: 600,
-      marginBottom: '0.35em',
     },
     h2: {
       fontSize: '2rem',
       fontWeight: 600,
-      marginBottom: '0.35em',
     },
     h3: {
       fontSize: '1.5rem',
       fontWeight: 600,
-      marginBottom: '0.35em',
     },
     body1: {
       fontSize: '1rem',
@@ -49,6 +46,9 @@ export default createTheme({
     MuiTypography: {
       root: {
         fontFamily: "'Poppins', sans-serif",
+      },
+      gutterBottom: {
+        marginBottom: '.5rem',
       },
     },
     // Button
