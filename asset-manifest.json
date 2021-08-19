@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/ert/static/css/main.b6f8b85d.chunk.css",
+    "main.js": "/ert/static/js/main.700a6718.chunk.js",
+    "main.js.map": "/ert/static/js/main.700a6718.chunk.js.map",
+    "runtime-main.js": "/ert/static/js/runtime-main.9c059323.js",
+    "runtime-main.js.map": "/ert/static/js/runtime-main.9c059323.js.map",
+    "static/js/2.98c0fd24.chunk.js": "/ert/static/js/2.98c0fd24.chunk.js",
+    "static/js/2.98c0fd24.chunk.js.map": "/ert/static/js/2.98c0fd24.chunk.js.map",
+    "static/js/3.37f82f83.chunk.js": "/ert/static/js/3.37f82f83.chunk.js",
+    "static/js/3.37f82f83.chunk.js.map": "/ert/static/js/3.37f82f83.chunk.js.map",
+    "index.html": "/ert/index.html",
+    "static/css/main.b6f8b85d.chunk.css.map": "/ert/static/css/main.b6f8b85d.chunk.css.map",
+    "static/js/2.98c0fd24.chunk.js.LICENSE.txt": "/ert/static/js/2.98c0fd24.chunk.js.LICENSE.txt",
+    "static/media/forgot-password.ec5da587.svg": "/ert/static/media/forgot-password.ec5da587.svg",
+    "static/media/login.def83611.svg": "/ert/static/media/login.def83611.svg",
+    "static/media/password-reset.3f2f9899.svg": "/ert/static/media/password-reset.3f2f9899.svg",
+    "static/media/signup.f99b2d1a.svg": "/ert/static/media/signup.f99b2d1a.svg",
+    "static/media/spash-btm-bg.0b873f03.svg": "/ert/static/media/spash-btm-bg.0b873f03.svg",
+    "static/media/spash-top-bg.497a0771.svg": "/ert/static/media/spash-top-bg.497a0771.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c059323.js",
+    "static/js/2.98c0fd24.chunk.js",
+    "static/css/main.b6f8b85d.chunk.css",
+    "static/js/main.700a6718.chunk.js"
+  ]
+}
