@@ -30,7 +30,7 @@ const Login: FC = () => {
           <PasswordInput label="Password" />
 
           <div className="d-flex align-items-center">
-            <FormControlLabel control={<Checkbox color="primary" className="pr-2" size="small" />} label="Remember me" />
+            <FormControlLabel control={<Checkbox color="primary" className="pr-2" size="small" />} label="Remember me" className="mb-2" />
             <CustomLink href="/forgot-password" className="ml-auto mb-2" underline="always">
               Forgot Password ?
             </CustomLink>

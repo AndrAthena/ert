@@ -2,7 +2,7 @@ import { FC } from 'react';
 import SEO from '../../Common/SEO';
 import Illustration from '../../../assets/images/forgot-password.svg';
 import FormContainer from '../FormContainer';
-import { Button, Divider, TextField } from '@material-ui/core';
+import { Button, Divider, TextField, Typography } from '@material-ui/core';
 import CustomLink from '../../Common/CustomLink';
 
 const ForgotPassword: FC = () => {
@@ -25,17 +25,12 @@ const ForgotPassword: FC = () => {
 
           <Divider variant="fullWidth" className="mt-5 mb-4" />
 
-          <CustomLink
-            href="/login"
-            button
-            buttonProps={{
-              variant: 'outlined',
-              color: 'primary',
-              fullWidth: true,
-            }}
-          >
-            Sign in
-          </CustomLink>
+          <Typography variant="body2">
+            Already have an account ?{' '}
+            <CustomLink href="/login" underline="hover">
+              Sign in
+            </CustomLink>
+          </Typography>
         </form>
       </FormContainer>
     </>

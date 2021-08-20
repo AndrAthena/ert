@@ -24,8 +24,8 @@ const FormContainer: FC<FormContainerprops> = ({ title, description, children, c
             <img src={illustration} alt={alt} role="presentation" />
           </div>
         </div>
-        <div className="col-lg-6 d-flex flex-column">
-          <div className={`${cls.formContainer} ${className}`}>
+        <div className="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+          <div className={`${cls.formContainer} ${className ? className : ''}`}>
             <Box mb={2} textAlign="center">
               <Logo className={cls.logo} />
               <Typography variant="h3" color="textPrimary" component="h1" align="center" gutterBottom>

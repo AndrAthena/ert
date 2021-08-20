@@ -32,13 +32,13 @@ const Signup: FC = () => {
           <FormControlLabel
             control={<Checkbox color="primary" className="p-1 pr-2" size="small" />}
             label="I've read and agree with Terms of Service and our Privacy Policy"
-            className="align-items-start"
+            className="align-items-start mb-3"
           />
           <Button type="submit" variant="contained" color="primary" fullWidth>
             Sign up
           </Button>
           <Divider variant="fullWidth" className="my-4" />
-          <Typography>
+          <Typography variant="body2">
             Already have an account ?{' '}
             <CustomLink href="/login" underline="hover">
               Sign in

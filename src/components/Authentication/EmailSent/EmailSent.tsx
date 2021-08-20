@@ -8,7 +8,7 @@ import Illustration from '../../../assets/images/email-sent.svg';
 const EmailSent: FC = () => {
   return (
     <>
-      <SEO title="Forgot your password" />
+      <SEO title="Resend e-mail" />
       <FormContainer
         title="Verification"
         description="Check your e-mail box to reset your password. Follow the instructions send to your email box"
@@ -17,7 +17,7 @@ const EmailSent: FC = () => {
         alt="Forgot Password"
       >
         <div className="my-4">
-          <Typography align="center">
+          <Typography align="center" variant="body2">
             You haven't received an email?
             <br /> Check your spam or click on the button below
           </Typography>
@@ -28,17 +28,12 @@ const EmailSent: FC = () => {
 
         <Divider variant="fullWidth" className="mt-5 mb-4" />
 
-        <CustomLink
-          href="/login"
-          button
-          buttonProps={{
-            variant: 'outlined',
-            color: 'primary',
-            fullWidth: true,
-          }}
-        >
-          Sign in
-        </CustomLink>
+        <Typography variant="body2">
+          Already have an account ?{' '}
+          <CustomLink href="/login" underline="hover">
+            Sign in
+          </CustomLink>
+        </Typography>
       </FormContainer>
     </>
   );
