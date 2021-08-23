@@ -45,6 +45,12 @@ export default createTheme({
     secondary: {
       main: '#36558F',
     },
+    common: {
+      white: '#fff',
+    },
+    background: {
+      paper: '#fff',
+    },
   },
   overrides: {
     MuiTypography: {
