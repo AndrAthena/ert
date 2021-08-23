@@ -20,7 +20,7 @@ const CustomLink: FC<CustomLinkProps> = (props) => {
       {children}
     </Link>
   ) : (
-    <Button href={href} onClick={handleClick} {...buttonProps} fullWidth>
+    <Button href={href} onClick={handleClick} {...buttonProps}>
       {children}
     </Button>
   );

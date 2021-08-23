@@ -6,13 +6,13 @@ import Login from './components/Authentication/Login';
 import NewPassword from './components/Authentication/NewPassword';
 import Signup from './components/Authentication/Signup';
 import Success from './components/Authentication/Success';
+import Home from './components/Home';
 import NotFound from './components/NotFound';
-import Splash from './components/Splash';
 
 function App() {
   return (
     <Switch>
-      <Route exact path="/" component={Splash} />
+      <Route exact path="/" component={Home} />
       <Route path="/login" component={Login} />
       <Route path="/signup" component={Signup} />
       <Route path="/forgot-password" component={ForgotPassword} />

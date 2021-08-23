@@ -10,12 +10,18 @@ export default createTheme({
     fontWeightMedium: 500,
     fontWeightBold: 700,
     h1: {
-      fontSize: '3rem',
-      fontWeight: 600,
-    },
-    h2: {
       fontSize: '2rem',
       fontWeight: 600,
+      '@media(min-width: 1281px)': {
+        fontSize: '3rem',
+      },
+    },
+    h2: {
+      fontSize: '1.875rem',
+      fontWeight: 600,
+      '@media(min-width: 1281px)': {
+        fontSize: '2rem',
+      },
     },
     h3: {
       fontSize: '1.5rem',
@@ -31,15 +37,13 @@ export default createTheme({
   palette: {
     text: {
       primary: '#021D31',
-      secondary: '#1E2836',
     },
     primary: {
       main: '#86C232',
       dark: '#61892F',
     },
     secondary: {
-      main: '#3286C2',
-      dark: '#36558F',
+      main: '#36558F',
     },
   },
   overrides: {
@@ -99,6 +103,11 @@ export default createTheme({
     MuiLink: {
       root: {
         color: '#FF725E',
+      },
+    },
+    MuiPaper: {
+      elevation1: {
+        boxShadow: '0 0 3px rgba(0, 0, 0, .25)',
       },
     },
   },
