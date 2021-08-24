@@ -29,6 +29,7 @@ const Hero = () => {
                 variant: 'contained',
                 color: 'secondary',
               }}
+              href="/create-template"
             >
               Create your first design
             </CustomLink>
