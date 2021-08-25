@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Avatar, Toolbar, Typography } from '@material-ui/core';
 import { FC } from 'react';
 import Logo from '../../Icons/Logo';
 import CustomLink from '../CustomLink';
@@ -10,12 +10,12 @@ const Header: FC = () => {
   return (
     <AppBar position="sticky" color="transparent" elevation={1}>
       <Toolbar className="container" disableGutters>
-        <div className="d-flex align-items-center mr-5">
+        <CustomLink className="d-flex align-items-center mr-5" href="/" color="initial" underline="none">
           <Logo />
           <Typography className="ml-2" color="textPrimary">
             <strong>RTE Technologies</strong>
           </Typography>
-        </div>
+        </CustomLink>
         <nav className={cls.menu}>
           <CustomLink href="/" underline="none">
             Home
@@ -33,7 +33,7 @@ const Header: FC = () => {
             Help
           </CustomLink>
         </nav>
-        <div className="ml-auto">
+        <div className="d-flex ml-auto">
           <CustomLink
             href="/login"
             button
@@ -55,6 +55,7 @@ const Header: FC = () => {
           >
             Sign up
           </CustomLink>
+          <Avatar className="ml-3">B</Avatar>
         </div>
       </Toolbar>
     </AppBar>

@@ -27,6 +27,10 @@ export default createTheme({
       fontSize: '1.5rem',
       fontWeight: 600,
     },
+    subtitle1: {
+      fontSize: '1.125rem',
+      fontWeight: 600,
+    },
     body1: {
       fontSize: '1rem',
     },
