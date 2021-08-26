@@ -8,7 +8,7 @@ const FeedEditor: FC<SvgIconProps> = (props) => (
         <rect width="41.005" height="11.222" transform="translate(2.036 39.584)" />
         <path d="M405.265,861.933v11.243H364.281V849.651h28.7v10.9c0,.658.127,1.039.509,1.209v.169Z" transform="translate(-362.244 -849.651)" />
         <path d="M387.35,858.968H378.8v-8.528Z" transform="translate(-345.963 -848.766)" />
-        <rect width="45.078" height="19.238" transform="translate(0 20.344)" stroke="#fff" stroke-width="1" />
+        <rect width="45.078" height="19.238" transform="translate(0 20.344)" stroke="#fff" strokeWidth="1" />
       </g>
     </g>
   </SvgIcon>

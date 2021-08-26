@@ -1,14 +1,14 @@
-import { AppBar, Avatar, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, AppBarProps, Avatar, Toolbar, Typography } from '@material-ui/core';
 import { FC } from 'react';
 import Logo from '../../Icons/Logo';
 import CustomLink from '../CustomLink';
 import stl from './style';
 
-const Header: FC = () => {
+const Header: FC<AppBarProps> = (props) => {
   const cls = stl();
 
   return (
-    <AppBar position="sticky" color="transparent" elevation={1}>
+    <AppBar position="sticky" color="transparent" elevation={1} {...props}>
       <Toolbar className="container" disableGutters>
         <CustomLink className="d-flex align-items-center mr-5" href="/" color="initial" underline="none">
           <Logo />
