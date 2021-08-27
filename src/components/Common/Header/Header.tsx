@@ -8,7 +8,7 @@ const Header: FC<AppBarProps> = (props) => {
   const cls = stl();
 
   return (
-    <AppBar position="sticky" color="transparent" elevation={1} {...props}>
+    <AppBar position="sticky" color="inherit" elevation={1} {...props}>
       <Toolbar className="container" disableGutters>
         <CustomLink className="d-flex align-items-center mr-5" href="/" color="initial" underline="none">
           <Logo />

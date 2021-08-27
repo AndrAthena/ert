@@ -27,7 +27,7 @@ const Splash: FC = () => {
         <Typography variant="h1" color="textPrimary" align="center" gutterBottom>
           Welcome to <span>RTE</span>
         </Typography>
-        <Typography color="textPrimary" align="center" gutterBottom>
+        <Typography color="textPrimary" align="center" className="mb-4">
           Create your ads fastly and efficiently.
         </Typography>
         <Button variant="outlined" color="primary" onClick={handleClose}>

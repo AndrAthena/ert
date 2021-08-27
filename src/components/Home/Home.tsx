@@ -2,6 +2,7 @@ import { FC } from 'react';
 import Header from '../Common/Header';
 import SEO from '../Common/SEO';
 import Splash from '../Splash';
+import Footer from './Footer';
 import Hero from './Hero';
 
 const Home: FC = () => {
@@ -13,6 +14,7 @@ const Home: FC = () => {
       <div>
         <Hero />
       </div>
+      <Footer />
     </>
   );
 };
