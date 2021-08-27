@@ -3765,3 +3765,7 @@ mark,
 .invisible {
   visibility: hidden !important;
 }
+
+.shadow-none {
+  box-shadow: none !important;
+}

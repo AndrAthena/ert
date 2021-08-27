@@ -12,7 +12,7 @@ const CustomStepper: FC<CustomStepperprops> = ({ active, stepNumber }) => {
   const progress: number = (active / stepNumber) * 100;
 
   return (
-    <AppBar color="transparent" elevation={0} position="relative" component="div" classes={{ root: 'mb-5' }}>
+    <AppBar color="inherit" elevation={0} position="relative" component="div" classes={{ root: 'mb-5' }}>
       <Toolbar classes={{ root: 'container' }} disableGutters>
         <div className="d-flex align-items-center">
           <CustomLink style={{ color: 'inherit' }} href="/create-template">
