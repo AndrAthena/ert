@@ -5,7 +5,7 @@ import AdsCreative from '../../Icons/AdsCreative';
 import AutomatedCreative from '../../Icons/AutomatedCreative';
 import FeedEditor from '../../Icons/FeedEditor';
 import NewTemplate from '../../Icons/NewTemplate';
-import TemplateLibrary from '../../Icons/TemplateLibrary';
+import ImageAds from '../../Icons/ImageAds';
 import TemplateCard from '../../Common/TemplateCard';
 import stl from './style';
 import { useHistory } from 'react-router';
@@ -29,7 +29,7 @@ const CreateTemplate = () => {
           </Typography>
           <div className="d-flex justify-content-center align-items-center my-5">
             <TemplateCard icon={<NewTemplate />} title="New Creative Template" onClick={handleClickCreate} />
-            <TemplateCard icon={<TemplateLibrary />} title="Creative Templates Library" />
+            <TemplateCard icon={<ImageAds />} title="Creative Templates Library" />
             <TemplateCard icon={<AdsCreative />} title="Ads Creatives" />
             <TemplateCard icon={<AutomatedCreative />} title="Automated Creatives" />
             <TemplateCard icon={<FeedEditor />} title="Feed Editor" />

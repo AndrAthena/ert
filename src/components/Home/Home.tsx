@@ -2,6 +2,7 @@ import { FC } from 'react';
 import Header from '../Common/Header';
 import SEO from '../Common/SEO';
 import Splash from '../Splash';
+import CreateAds from './CreateAds';
 import Footer from './Footer';
 import Hero from './Hero';
 
@@ -13,6 +14,7 @@ const Home: FC = () => {
       <Header />
       <div>
         <Hero />
+        <CreateAds />
       </div>
       <Footer />
     </>

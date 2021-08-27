@@ -1,7 +1,7 @@
 import { SvgIcon, SvgIconProps } from '@material-ui/core';
 import { FC } from 'react';
 
-const TemplateLibrary: FC<SvgIconProps> = (props) => (
+const ImageAds: FC<SvgIconProps> = (props) => (
   <SvgIcon {...props} viewBox="0 0 45 45.525">
     <path d="M0,0H12.2a0,0,0,0,1,0,0V31.2a0,0,0,0,1,0,0H2.372A2.372,2.372,0,0,1,0,28.826V0A0,0,0,0,1,0,0Z" transform="translate(0 14.327)" />
     <path
@@ -12,4 +12,4 @@ const TemplateLibrary: FC<SvgIconProps> = (props) => (
   </SvgIcon>
 );
 
-export default TemplateLibrary;
+export default ImageAds;
