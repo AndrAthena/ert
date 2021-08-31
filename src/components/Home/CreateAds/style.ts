@@ -11,12 +11,18 @@ export const cardStl = makeStyles((theme) => ({
     color: color,
     textAlign: 'center',
     borderImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.1 99.8"><path fill="none" stroke="${color}" stroke-dasharray="10" d="M2.9,0.5h94.3c1.3,0,2.4,1.3,2.4,3v92.8c0,1.7-1.1,3-2.4,3H2.9c-1.3,0-2.4-1.3-2.4-3V3.5C0.5,1.8,1.6,0.5,2.9,0.5z"/></svg>') 15 / 10px  repeat`,
+    '& svg': {
+      fontSize: '3rem',
+    },
   }),
 }));
 
 export default makeStyles((theme) => ({
   create_ads: {
-    height: '100vh',
-    background: `url(${bg}) top right / 60% no-repeat`,
+    padding: theme.spacing(10, 0),
+    background: `url('${bg}') top right / 60% no-repeat`,
+    '& h2': {
+      color: '#36558F',
+    },
   },
 }));

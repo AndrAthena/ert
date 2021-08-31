@@ -24,8 +24,13 @@ img {
   max-width: 100%;
 }
 
+.container {
+  min-width: 100%;
+}
+
 @media (min-width: 1200px) {
   .container {
+    min-width: initial;
     max-width: 1850px;
   }
 }

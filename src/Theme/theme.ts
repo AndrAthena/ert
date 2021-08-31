@@ -67,6 +67,9 @@ export default createTheme({
     },
     // Button
     MuiButton: {
+      root: {
+        maxHeight: 40,
+      },
       outlined: {
         padding: '0.5rem 1.5rem',
         fontSize: '.875rem',

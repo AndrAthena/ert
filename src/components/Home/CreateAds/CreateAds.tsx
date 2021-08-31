@@ -3,6 +3,7 @@ import { ElementType, FC } from 'react';
 import AdsCreative from '../../Icons/AdsCreative';
 import FeedEditor from '../../Icons/FeedEditor';
 import ImageAds from '../../Icons/ImageAds';
+import VideoAds from '../../Icons/VideoAds';
 import stl, { cardStl } from './style';
 
 interface CustomCardProps {
@@ -17,8 +18,10 @@ const CustomCard: FC<CardProps & CustomCardProps> = ({ color, icon: Icon, title,
 
   return (
     <Card variant="outlined" className={`${cls.card} ${other.className}`}>
-      <Typography align="center">{title}</Typography>
-      <Icon htmlColor={iconColor} fontSize="large" className="mt-4" />
+      <Typography align="center">
+        <strong>{title}</strong>
+      </Typography>
+      <Icon htmlColor={iconColor} className="mt-4" />
     </Card>
   );
 };
@@ -32,10 +35,10 @@ const CreateAds = () => {
         <div className="row">
           <div className="d-flex flex-wrap align-content-start col-md-5">
             <CustomCard title="Dynamic Image ads Template" icon={ImageAds} iconColor="#3AC1EC" color="rgb(0, 50, 122)" />
-            <CustomCard className="mt-4" title="Dynamic Video ads Template" icon={ImageAds} iconColor="" color="rgb(134,194,50)" />
-            <CustomCard title="Dynamic Feed Creative Automation" icon={FeedEditor} iconColor="#FF725E" color="rgb(255,114,94)" />
+            <CustomCard className="ml-4 mt-4" title="Dynamic Video ads Template" icon={VideoAds} iconColor="#86C232" color="rgb(134,194,50)" />
+            <CustomCard className="ml-4" title="Dynamic Feed Creative Automation" icon={FeedEditor} iconColor="#FF725E" color="rgb(200, 82, 65)" />
             <CustomCard
-              className="mt-4"
+              className="mt-5"
               title="Dynamic Product Catalog Video Creatives"
               icon={AdsCreative}
               iconColor="#FBB244"
@@ -43,7 +46,7 @@ const CreateAds = () => {
             />
           </div>
           <div className="col-md-7">
-            <Typography variant="h2" color="textPrimary" gutterBottom>
+            <Typography variant="h2" color="textPrimary" className="mt-5 text-uppercase" gutterBottom>
               Create dynamics ads creatives and discover your audiences through unique cross-platform personalization at scale
             </Typography>
             <Typography color="textSecondary">

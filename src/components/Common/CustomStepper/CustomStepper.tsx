@@ -1,6 +1,6 @@
 import { AppBar, LinearProgress, Toolbar, Typography } from '@material-ui/core';
 import { ArrowBack } from '@material-ui/icons';
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import CustomLink from '../CustomLink';
 
 interface CustomStepperprops {
