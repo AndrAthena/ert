@@ -20,20 +20,18 @@ const CreateTemplate = () => {
       <SEO title="Create Template" />
       <Header />
       <div className={`${cls.create} container`}>
-        <div className="d-flex h-100 flex-column justify-content-center align-items-center">
-          <Typography align="center" variant="h1" gutterBottom>
-            Hello Barry !
-          </Typography>
-          <Typography align="center" color="textSecondary">
-            Quickly create your campaign ad. Browse the templates, the ads already created and your feeds
-          </Typography>
-          <div className="d-flex justify-content-center align-items-center my-5">
-            <TemplateCard icon={<NewTemplate />} title="New Creative Template" onClick={handleClickCreate} />
-            <TemplateCard icon={<ImageAds />} title="Creative Templates Library" />
-            <TemplateCard icon={<AdsCreative />} title="Ads Creatives" />
-            <TemplateCard icon={<AutomatedCreative />} title="Automated Creatives" />
-            <TemplateCard icon={<FeedEditor />} title="Feed Editor" />
-          </div>
+        <Typography align="center" variant="h1" gutterBottom>
+          Hello Barry !
+        </Typography>
+        <Typography align="center" color="textSecondary">
+          Quickly create your campaign ad. Browse the templates, the ads already created and your feeds
+        </Typography>
+        <div className={`${cls.cardContainer} my-3 my-lg-5`}>
+          <TemplateCard icon={<NewTemplate />} title="New Creative Template" onClick={handleClickCreate} />
+          <TemplateCard icon={<ImageAds />} title="Creative Templates Library" />
+          <TemplateCard icon={<AdsCreative />} title="Ads Creatives" />
+          <TemplateCard icon={<AutomatedCreative />} title="Automated Creatives" />
+          <TemplateCard icon={<FeedEditor />} title="Feed Editor" />
         </div>
       </div>
     </>

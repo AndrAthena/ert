@@ -2,6 +2,17 @@ import { makeStyles } from '@material-ui/core';
 
 export default makeStyles((theme) => ({
   create: {
-    height: 'calc(100% - 64px)',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    paddingTop: theme.spacing(2),
+    paddingBottom: theme.spacing(2),
+    minHeight: 'calc(100% - 64px)',
+  },
+  cardContainer: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 }));
