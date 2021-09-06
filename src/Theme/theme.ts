@@ -37,6 +37,9 @@ export default createTheme({
     body2: {
       fontSize: '0.875rem',
     },
+    caption: {
+      fontSize: '0.75rem',
+    },
   },
   palette: {
     text: {

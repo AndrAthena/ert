@@ -1,13 +1,13 @@
-import { Button } from '@material-ui/core';
 import FormContainer from '../FormContainer';
 import Illustration from '../../../assets/images/success.svg';
+import CustomLink from './../../Common/CustomLink/CustomLink';
 
 const Success = () => {
   return (
     <FormContainer title="Congratulation !" description="Your password has been successfully created." illustration={Illustration} alt="Success">
-      <Button type="submit" variant="contained" color="primary" fullWidth>
+      <CustomLink button buttonProps={{ variant: 'contained', color: 'primary', fullWidth: true }} href="/login">
         Sign in
-      </Button>
+      </CustomLink>
     </FormContainer>
   );
 };
