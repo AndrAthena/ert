@@ -1,11 +1,28 @@
-import { TextField, Typography } from '@material-ui/core';
-import { TreeItem, TreeView } from '@material-ui/lab';
-import Folder from '../../../Icons/Folder';
+import { Box, TextField, Typography } from '@material-ui/core';
+import CustomTreeView, { RenderTreeProps } from '../../../Common/CustomTreeView';
+import styles from '../style';
 
 const Step1 = () => {
+  const cls = styles();
+
+  const data: RenderTreeProps = {
+    id: 'root',
+    name: 'New Folder',
+    children: [
+      {
+        id: 'sub-root-1',
+        name: 'Sub Folder 1',
+      },
+      {
+        id: 'sub-root-2',
+        name: 'Sub Folder 2',
+      },
+    ],
+  };
+
   return (
-    <div className="mx-auto">
-      <Typography variant="subtitle1" color="textPrimary">
+    <div className={cls.step}>
+      <Typography variant="h2" color="textPrimary" gutterBottom>
         Configure the structure of your template folder
       </Typography>
       <Typography color="textSecondary">Choose the number of sub-folder and where to put your ads </Typography>
@@ -17,6 +34,7 @@ const Step1 = () => {
           inputProps={{
             min: 0,
           }}
+          required
           fullWidth
         />
         <TextField
@@ -26,17 +44,22 @@ const Step1 = () => {
           SelectProps={{
             native: true,
           }}
+          required
           fullWidth
         >
           <option>Sub-Folder 1</option>
           <option>Sub-Folder 2</option>
           <option>Sub-Folder 3</option>
         </TextField>
+        <Box mt={2}>
+          <Typography color="textSecondary" gutterBottom>
+            Rename your folder
+          </Typography>
+          <Box mb={3}>
+            <CustomTreeView data={data} defaultExpanded={['root']} />
+          </Box>
+        </Box>
       </form>
-      <TreeView>
-        <TreeItem label="Folder" icon={<Folder fontSize="large" color="primary" />} nodeId="root-folder-1" />
-        <TreeItem label="Folder" nodeId="root-folder-2" />
-      </TreeView>
     </div>
   );
 };
