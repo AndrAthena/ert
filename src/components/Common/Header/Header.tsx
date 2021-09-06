@@ -21,7 +21,7 @@ const Header: FC<AppBarProps> = (props) => {
   });
 
   return (
-    <AppBar position="sticky" color="inherit" elevation={1} {...props}>
+    <AppBar position="sticky" color="inherit" elevation={1} classes={{ positionSticky: cls.header }} {...props}>
       <Toolbar className="container" disableGutters>
         <CustomLink className="d-flex align-items-center mr-5" href="/" color="initial" underline="none">
           <Logo />

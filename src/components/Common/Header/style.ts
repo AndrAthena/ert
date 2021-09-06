@@ -1,6 +1,9 @@
 import { makeStyles } from '@material-ui/core';
 
 export default makeStyles((theme) => ({
+  header: {
+    zIndex: 100,
+  },
   menu: {
     '& a': {
       margin: theme.spacing(0, 2),
