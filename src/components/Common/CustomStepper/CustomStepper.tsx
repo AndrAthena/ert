@@ -31,7 +31,7 @@ const CustomStepper: FC<CustomStepperprops> = ({ active, stepNumber }) => {
         </div>
         <div className={cls.stepText}>
           <Typography color="textPrimary" align="center">
-            Step {active}/3
+            Step {active}/{stepNumber}
           </Typography>
         </div>
       </Toolbar>

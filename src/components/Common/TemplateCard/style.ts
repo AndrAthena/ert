@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core';
 
 export default makeStyles((theme) => ({
-  templateCard: {
+  templateCard: ({ iconProps }: any) => ({
     width: 160,
     height: 160,
     display: 'flex',
@@ -9,7 +9,7 @@ export default makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     padding: theme.spacing(1.5),
-    color: '#628E25',
+    color: iconProps ? (iconProps.color ? iconProps.color : iconProps.htmlColor) : theme.palette.primary.main,
     backgroundColor: '#F9F9F9 ',
     border: '1px solid transparent',
     borderRadius: 16,
@@ -19,9 +19,9 @@ export default makeStyles((theme) => ({
       marginBottom: theme.spacing(1),
     },
     '&:hover, &:focus': {
-      color: theme.palette.primary.main,
-      borderColor: theme.palette.primary.main,
+      color: iconProps ? (iconProps.color ? iconProps.color : iconProps.htmlColor) : theme.palette.primary.main,
+      borderColor: iconProps ? (iconProps.color ? iconProps.color : iconProps.htmlColor) : theme.palette.primary.main,
       boxShadow: '0 0 26px #14141410',
     },
-  },
+  }),
 }));
