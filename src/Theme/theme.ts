@@ -72,6 +72,7 @@ export default createTheme({
     MuiButton: {
       root: {
         maxHeight: 40,
+        borderRadius: 6,
       },
       outlined: {
         padding: '0.5rem 1.5rem',
@@ -87,6 +88,9 @@ export default createTheme({
       containedPrimary: {
         color: 'white',
       },
+      sizeSmall: {
+        padding: '2px 10px',
+      },
     },
     // Input
     MuiInputBase: {
@@ -100,6 +104,9 @@ export default createTheme({
       },
     },
     MuiOutlinedInput: {
+      root: {
+        borderRadius: 6,
+      },
       input: {
         padding: '11.5px 14px',
         fontSize: '.875rem',
@@ -124,6 +131,12 @@ export default createTheme({
     MuiPaper: {
       elevation1: {
         boxShadow: '0 0 3px rgba(0, 0, 0, .25)',
+      },
+    },
+    MuiSelect: {
+      outlined: {
+        paddingTop: 9,
+        paddingBottom: 9,
       },
     },
   },

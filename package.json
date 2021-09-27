@@ -17,13 +17,18 @@
     "@types/react-facebook-login": "^4.1.4",
     "@types/react-helmet": "^6.1.2",
     "@types/react-router-dom": "^5.1.8",
+    "font-picker-react": "^3.5.2",
+    "fontfaceobserver": "^2.1.0",
     "gh-pages": "^3.2.3",
+    "konva": "^8.2.1",
     "material-ui-chip-input": "^1.1.0",
     "react": "^17.0.2",
+    "react-color": "^2.19.3",
     "react-dom": "^17.0.2",
     "react-facebook-login": "^4.1.1",
     "react-google-login": "^5.2.2",
     "react-helmet": "^6.1.0",
+    "react-konva": "^17.0.2-5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "swiper": "^6.8.4",
@@ -55,5 +60,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/fontfaceobserver": "^2.1.0",
+    "@types/react-color": "^3.0.5"
   }
 }

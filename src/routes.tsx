@@ -9,6 +9,7 @@ import Success from './components/Authentication/Success';
 import Create from './components/CreateStep/Create';
 import TemplateDestination from './components/CreateStep/Create/TemplateDestination';
 import CreateTemplate from './components/CreateTemplate';
+import Editor from './components/Editor';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
 
@@ -26,6 +27,7 @@ function Routes() {
       <Route path="/create-template" component={CreateTemplate} exact />
       <Route path="/create-template/:action" component={Create} />
       <Route path="/template-destination" component={TemplateDestination} exact />
+      <Route path="/editor" component={Editor} exact />
       <Route path="*" component={NotFound} />
     </Switch>
   );
