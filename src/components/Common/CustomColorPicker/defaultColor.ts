@@ -1,0 +1,28 @@
+import { Color } from 'react-color';
+
+export const defaultColor: Color[] = [
+  '#000000',
+  '#545454',
+  '#737373',
+  '#a6a6a6',
+  '#d9d9d9',
+  '#ffffff',
+  '#ff1616',
+  '#ff5757',
+  '#ff66c4',
+  '#cb6ce6',
+  '#8c52ff',
+  '#5e17eb',
+  '#03989e',
+  '#00c2cb',
+  '#5ce1e6',
+  '#38b6ff',
+  '#5271ff',
+  '#004aad',
+  '#008037',
+  '#7ed957',
+  '#c9e265',
+  '#ffde59',
+  '#ffbd59',
+  '#ff914d',
+];
