@@ -1,9 +1,9 @@
-import { Typography, TextField, InputAdornment, Fade } from '@material-ui/core';
+import { Typography, Fade } from '@material-ui/core';
 import CustomAdsCard from './CustomAdsCard/CustomAdsCard';
 import styles from './style';
 import Facebook from '../../../Icons/Facebook';
 import Instagram from '../../../Icons/Instagram';
-import { Search, Settings, YouTube } from '@material-ui/icons';
+import { Settings, YouTube } from '@material-ui/icons';
 import CarouselSwiper from '../../../Common/CarouselSwiper/CarouselSwiper';
 import CardImage from '../../../Common/CardImage';
 import template1 from '../../../../assets/images/template-1.png';
@@ -13,6 +13,7 @@ import template4 from '../../../../assets/images/template-4.png';
 import template5 from '../../../../assets/images/template-5.png';
 import template6 from '../../../../assets/images/template-6.png';
 import { FC } from 'react';
+import CustomSearchInput from '../../../Common/CustomSearchInput';
 
 const slides = [template1, template2, template3, template4, template5, template6];
 
@@ -51,19 +52,7 @@ const ChooseTemplate: FC<ChooseTemplateProps> = ({ handleNext }) => {
           <CustomAdsCard size={{ width: 125, height: 120 }} title="Custom size" icon={Settings} color="#86C232" onClick={handleNext} />
         </div>
         <div>
-          <TextField
-            variant="outlined"
-            placeholder="Search a template"
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <Search color="primary" />
-                </InputAdornment>
-              ),
-            }}
-            fullWidth
-            type="search"
-          />
+          <CustomSearchInput placeholder="Search a template" fullWidth />
           <Typography color="textSecondary" gutterBottom>
             Youtube Thumbnails
           </Typography>

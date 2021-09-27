@@ -9,8 +9,8 @@ import CustomLink from '../../Common/CustomLink';
 import Step1 from './Step1';
 import { useParams } from 'react-router-dom';
 
-const stepContent = (steps: { step: number; handlePrev: () => void; handleNext: () => void }, action: string) => {
-  const { step, handlePrev, handleNext } = steps;
+const stepContent = (steps: { step: number; handleNext: () => void }, action: string) => {
+  const { step, handleNext } = steps;
 
   switch (step) {
     case 1:
@@ -35,7 +35,7 @@ const Create = () => {
       <Header elevation={0} />
       <CustomStepper active={step} stepNumber={4} />
       <div className="container">
-        <div>{stepContent({ step, handlePrev, handleNext }, action)}</div>
+        <div>{stepContent({ step, handleNext }, action)}</div>
         <div className="mx-auto text-center py-3">
           {step === 1 ? (
             <CustomLink href="/template-destination" button buttonProps={{ variant: 'outlined', color: 'secondary', classes: { root: 'mr-3' } }}>

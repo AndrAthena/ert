@@ -7,8 +7,8 @@ interface AboutTemplateProps {}
 
 const CustomChipInput = withStyles({
   root: {
-    '& [class*="inputRoot"], & > div > div': {
-      paddingTop: 0,
+    '& > div > div': {
+      paddingTop: '0 !important',
     },
     '& input': {
       margin: 0,
