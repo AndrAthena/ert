@@ -10,8 +10,8 @@ import { HashRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
   <Router basename="/">
-    <CssBaseline />
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <App />
     </ThemeProvider>
   </Router>,

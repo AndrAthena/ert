@@ -4,11 +4,11 @@ export default makeStyles((theme) => ({
   editor: {
     height: 'calc(100% - 64px)',
     display: 'flex',
-    padding: theme.spacing(1.5, 4),
+    padding: theme.spacing(1.5, 0),
     backgroundColor: '#EFEFEF',
   },
   sidebarMenu: {
-    flex: '0 0 160px',
+    flex: '0 0 100px',
     '& .MuiTabs-indicator': {
       display: 'none',
     },

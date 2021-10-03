@@ -13,15 +13,15 @@ interface CustomTabProps extends TabProps {
 
 const CustomTab = withStyles((theme) => ({
   root: {
-    width: 150,
     flex: '0 0 100px',
     color: '#6B6E70',
     backgroundColor: '#EFEFEF',
     '&$selected': {
       color: theme.palette.primary.main,
       backgroundColor: '#fff',
-      borderTopLeftRadius: 10,
-      borderBottomLeftRadius: 10,
+    },
+    '@media(min-width:600px)': {
+      minWidth: 100,
     },
   },
   wrapper: {

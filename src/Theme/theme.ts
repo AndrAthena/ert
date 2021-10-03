@@ -60,6 +60,13 @@ export default createTheme({
     },
   },
   overrides: {
+    MuiCssBaseline: {
+      '@global': {
+        div: {
+          fontFamily: "'Poppins', sans-serif",
+        },
+      },
+    },
     MuiTypography: {
       root: {
         fontFamily: "'Poppins', sans-serif",

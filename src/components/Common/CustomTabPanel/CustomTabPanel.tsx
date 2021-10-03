@@ -1,13 +1,14 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
-interface CustomTabPanelProps {
+export interface CustomTabPanelProps {
   value: any;
   name: any;
-  children: ReactNode;
+  children: any;
+  className?: string;
 }
 
-const CustomTabPanel: FC<CustomTabPanelProps> = ({ children, name, value }) => {
-  return value === name ? <>{children}</> : null;
+const CustomTabPanel: FC<CustomTabPanelProps> = ({ children, name, value, className }) => {
+  return value === name ? <div className={className}>{children}</div> : null;
 };
 
 export default CustomTabPanel;
