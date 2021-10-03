@@ -18,6 +18,8 @@ import TextTab from './TextTab/TextTab';
 import CustomTabs, { TabsType } from '../Common/CustomTabs';
 import TemplatePanel from './TemplatePanel';
 import CustomColorPicker from '../Common/CustomColorPicker';
+import FontFaceObserver from 'fontfaceobserver';
+import ImageTab from './ImageTab';
 
 const Editor = () => {
   const cls = styles();
@@ -27,7 +29,13 @@ const Editor = () => {
   const [textColor, setTextColor] = useState<Color>('#86C232');
   const handleSelectColor = (_: any, color: Color) => setTextColor(color);
   const openSidebar = () => setTab('color-picker');
-  const handleChangeFont = (font: any) => setFont(font.family);
+  const handleChangeFont = (font: any) => {
+    const loadableFont = new FontFaceObserver(font.family);
+    loadableFont
+      .load()
+      .then((_) => setFont(font.family))
+      .catch((error) => console.log(error));
+  };
 
   // Text elements
   const [elementIsSelected, setElementIsSelected] = useState<boolean>(false);
@@ -51,6 +59,7 @@ const Editor = () => {
 
   const handleSelectText = (e: KonvaEventObject<MouseEvent>) => {
     setElementIsSelected(true);
+    if (refs.find((ref) => ref === e.target)) return;
     setRefs((ref) => [...ref, e.target]);
   };
 
@@ -60,7 +69,12 @@ const Editor = () => {
   };
 
   const elements: any[] = [
-    <Text onClick={handleSelectText} onTransform={handleTransform} {...textAttr} />,
+    <Text
+      onClick={handleSelectText}
+      onTransform={handleTransform}
+      key="text-element-0"
+      {...textAttr}
+    />,
   ];
 
   const editorTabs: TabsType[] = [
@@ -74,7 +88,7 @@ const Editor = () => {
     {
       name: 'image',
       value: 'image',
-      content: 'div',
+      content: ImageTab,
       label: 'Image',
       icon: <ImageIcon />,
     },
