@@ -33,16 +33,30 @@ const Create = () => {
   return (
     <div>
       <Header elevation={0} />
-      <CustomStepper active={step} stepNumber={4} />
+      <CustomStepper
+        active={step}
+        stepNumber={4}
+        title="New template"
+        subtitle="Create a new template quickly"
+      />
       <div className="container">
         <div>{stepContent({ step, handleNext }, action)}</div>
         <div className="mx-auto text-center py-3">
           {step === 1 ? (
-            <CustomLink href="/template-destination" button buttonProps={{ variant: 'outlined', color: 'secondary', classes: { root: 'mr-3' } }}>
+            <CustomLink
+              href="/template-destination"
+              button
+              buttonProps={{ variant: 'outlined', color: 'secondary', classes: { root: 'mr-3' } }}
+            >
               Back
             </CustomLink>
           ) : (
-            <Button variant="outlined" color="secondary" classes={{ root: 'mr-3' }} onClick={handlePrev}>
+            <Button
+              variant="outlined"
+              color="secondary"
+              classes={{ root: 'mr-3' }}
+              onClick={handlePrev}
+            >
               Back
             </Button>
           )}

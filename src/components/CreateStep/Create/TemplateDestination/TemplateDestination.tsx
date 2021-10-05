@@ -14,7 +14,12 @@ const TemplateDestination = () => {
   return (
     <>
       <Header />
-      <CustomStepper active={1} stepNumber={4} />
+      <CustomStepper
+        active={1}
+        stepNumber={4}
+        title="New template"
+        subtitle="Create a new template quickly"
+      />
       <div className="container d-flex flex-column justify-content-center align-items-center">
         <Typography variant="h2" align="center" gutterBottom>
           Where to put your template ?
