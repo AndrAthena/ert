@@ -1,12 +1,11 @@
-import React, { FC, ChangeEvent, ElementType } from 'react';
+import React, { FC, ChangeEvent, ReactNode } from 'react';
 import { TabProps, Tabs, TabsProps, Typography } from '@material-ui/core';
 import CustomTab from '../CustomTab';
 import styles from './style';
 
 export type TabsType = TabProps & {
   name: any;
-  content: ElementType;
-  props?: Record<any, any>;
+  content: ReactNode;
 };
 
 interface CustomTabsProps extends TabsProps {
@@ -39,10 +38,10 @@ const CustomTabs: FC<CustomTabsProps> = ({ tabs, tab, setTab, ...rest }) => {
           />
         ))}
       </Tabs>
-      {tabs.map(({ name, content: Panel, props }, index: number) => {
+      {tabs.map(({ name, content }, index: number) => {
         return tab === name ? (
           <div className={cls.panel} key={`tab-panel-${index}`}>
-            <Panel {...props} />
+            {content}
           </div>
         ) : null;
       })}
