@@ -96,7 +96,8 @@ export default createTheme({
         color: 'white',
       },
       sizeSmall: {
-        padding: '2px 10px',
+        padding: '0.375rem 1rem',
+        fontSize: '.75rem',
       },
     },
     // Input

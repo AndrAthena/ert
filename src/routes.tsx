@@ -10,6 +10,7 @@ import Create from './components/CreateStep/Create';
 import TemplateDestination from './components/CreateStep/Create/TemplateDestination';
 import CreateTemplate from './components/CreateTemplate';
 import Editor from './components/Editor';
+import Generate from './components/Generate';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
 
@@ -28,6 +29,7 @@ function Routes() {
       <Route path="/create-template/:action" component={Create} />
       <Route path="/template-destination" component={TemplateDestination} exact />
       <Route path="/editor" component={Editor} exact />
+      <Route path="/generate" component={Generate} exact />
       <Route path="*" component={NotFound} />
     </Switch>
   );
