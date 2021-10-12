@@ -1,6 +1,6 @@
 import { AppBar, Button, IconButton, Toolbar, Typography } from '@material-ui/core';
 import { ArrowLeft } from '@material-ui/icons';
-import ImageIcon from '../../Icons/ImageIcon';
+import ImageIcon from '../../../Icons/ImageIcon';
 
 const EditorHeader = () => {
   return (

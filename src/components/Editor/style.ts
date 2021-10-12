@@ -4,7 +4,7 @@ export default makeStyles((theme) => ({
   editor: {
     height: 'calc(100% - 64px)',
     display: 'flex',
-    padding: theme.spacing(1.5, 0),
+    padding: theme.spacing(1.5),
     backgroundColor: '#EFEFEF',
   },
   sidebarMenu: {
