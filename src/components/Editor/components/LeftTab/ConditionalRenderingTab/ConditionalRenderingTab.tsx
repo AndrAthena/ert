@@ -1,10 +1,7 @@
 import { Box, Button, Typography } from '@material-ui/core';
 import CustomSelect from '../../../../Common/CustomSelect';
-import styles from './style';
 
 const ConditionalRenderingTab = () => {
-  const cls = styles();
-
   return (
     <Box>
       <Typography gutterBottom>Add a conditional rendering</Typography>

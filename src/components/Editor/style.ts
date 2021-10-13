@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core';
 
 export default makeStyles((theme) => ({
-  editor: {
+  editorContainer: {
     height: 'calc(100% - 64px)',
     display: 'flex',
     padding: theme.spacing(1.5),
@@ -21,8 +21,15 @@ export default makeStyles((theme) => ({
     borderTopRightRadius: 10,
     borderBottomRightRadius: 10,
   },
-  editorContainer: {
+  editor: {
     flex: 1,
-    maxWidth: 'calc(100% - 160px)',
+    maxWidth: 'calc(100% - 500px)',
+    display: 'flex',
+    flexDirection: 'column',
+    flexGrow: 1,
+  },
+  editorCanvas: {
+    flex: 1,
+    maxWidth: 'calc(100% - 80px)',
   },
 }));

@@ -48,7 +48,7 @@ const CustomTab = withStyles((theme) => ({
 }))(Tab);
 
 const Data = () => {
-  const [value, setValue] = useState('data');
+  const [value, setValue] = useState('feed');
   const handleChangeValue = (_: any, value: string) => setValue(value);
 
   return (

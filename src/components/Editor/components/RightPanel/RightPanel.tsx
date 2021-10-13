@@ -8,6 +8,7 @@ import Format from './Format';
 
 const CustomTabs = withStyles({
   root: {
+    height: '100%',
     backgroundColor: '#fff',
     borderTopRightRadius: 10,
     borderBottomRightRadius: 10,

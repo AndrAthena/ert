@@ -33,7 +33,7 @@ const Editor = () => {
   const [font, setFont] = useState<any>('Roboto');
   const [textColor, setTextColor] = useState<Color>('#86C232');
   const handleSelectColor = (_: any, color: Color) => setTextColor(color);
-  const openSidebar = () => setTab('adjustement');
+  const openSidebar = () => setTab('color-picker');
   const handleChangeFont = (font: any) => {
     const loadableFont = new FontFaceObserver(font.family);
     loadableFont
@@ -142,9 +142,9 @@ const Editor = () => {
     <div style={{ height: '100%', overflow: 'hidden' }}>
       <SEO title="Editor" />
       <EditorHeader />
-      <div className={cls.editor}>
+      <div className={cls.editorContainer}>
         <CustomTabs tabs={editorTabs} className={cls.sidebarMenu} tab={tab} setTab={setTab} />
-        <Box flexGrow={1} display="flex" flexDirection="column">
+        <Box className={cls.editor}>
           <AppBar color="inherit" position="static" elevation={0}>
             <Toolbar style={{ minHeight: 'initial', padding: 8 }} disableGutters>
               <ColorBox
@@ -155,15 +155,17 @@ const Editor = () => {
               <TextFormat font={font} handleChangeFont={handleChangeFont} />
             </Toolbar>
           </AppBar>
-          <Box flexGrow={1}>
-            {/* <EditorCanva
-              elements={elements}
-              elementIsSelected={elementIsSelected}
-              refs={refs}
-              stageProps={{
-                onMouseDown: handleDetectElement,
-              }}
-            /> */}
+          <Box display="flex" flexGrow={1} height={1} mt={2}>
+            <Box className={cls.editorCanvas}>
+              <EditorCanva
+                elements={elements}
+                elementIsSelected={elementIsSelected}
+                refs={refs}
+                stageProps={{
+                  onMouseDown: handleDetectElement,
+                }}
+              />
+            </Box>
             <RightPanel />
           </Box>
         </Box>

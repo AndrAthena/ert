@@ -1,6 +1,6 @@
-import { Box, Button, FormControlLabel, FormGroup, Typography } from '@material-ui/core';
+import { Box, Button, FormGroup, Typography } from '@material-ui/core';
+import CustomRadio from '../../../../Common/CustomRadio';
 import CustomSelect from '../../../../Common/CustomSelect';
-import CustomSwitch from '../../../../Common/CustomSwitch';
 
 const Format = () => {
   return (
@@ -17,31 +17,15 @@ const Format = () => {
       <Box>
         <Typography gutterBottom>Editor</Typography>
         <FormGroup>
-          <FormControlLabel
-            control={<CustomSwitch color="primary" />}
-            label="Show grid"
-            labelPlacement="end"
-          />
-          <FormControlLabel
-            control={<CustomSwitch color="primary" />}
-            label="Show layers outside canvas"
-            labelPlacement="end"
-          />
-          <FormControlLabel
-            control={<CustomSwitch color="primary" />}
-            label="Show format overlay"
-            labelPlacement="end"
-          />
+          <CustomRadio type="switch" label="Show grid" />
+          <CustomRadio type="switch" label="Show layers outside canvas" />
+          <CustomRadio type="switch" label="Show format overlay" />
         </FormGroup>
       </Box>
       <Box>
         <Typography>Editor</Typography>
         <FormGroup row>
-          <FormControlLabel
-            control={<CustomSwitch color="primary" />}
-            label="Enable"
-            labelPlacement="end"
-          />
+          <CustomRadio type="switch" label="Enable" />
           <CustomSelect
             placeholder="Format"
             items={[{ label: 'Health Product Feed', value: 'feed' }]}
