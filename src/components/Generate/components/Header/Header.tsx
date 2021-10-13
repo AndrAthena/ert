@@ -1,6 +1,6 @@
 import { AppBar, Box, IconButton, Toolbar, Typography } from '@material-ui/core';
 import { ArrowLeft, CheckCircle } from '@material-ui/icons';
-import ImageIcon from '../../Icons/ImageIcon';
+import ImageIcon from '../../../Icons/ImageIcon';
 
 const Header = () => {
   return (

@@ -1,8 +1,9 @@
-import { AppBar, Button, Checkbox, FormControlLabel, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Button, Toolbar } from '@material-ui/core';
 import { Edit, GetApp, Share } from '@material-ui/icons';
 import { FC, MouseEvent } from 'react';
-import Feed from '../../Icons/Feed';
-import RefreshSetting from '../../Icons/RefreshSetting';
+import CustomRadio from '../../../Common/CustomRadio';
+import Feed from '../../../Icons/Feed';
+import RefreshSetting from '../../../Icons/RefreshSetting';
 import styles from './style';
 
 interface ButtonGroupBarProps {
@@ -23,14 +24,7 @@ const ButtonGroupBar: FC<ButtonGroupBarProps> = ({ action }) => {
   return (
     <AppBar position="sticky" color="transparent" elevation={0} component="div">
       <Toolbar className={cls.buttonGroupBar}>
-        <FormControlLabel
-          control={<Checkbox size="small" />}
-          label={
-            <Typography variant="caption" color="secondary">
-              5 selected
-            </Typography>
-          }
-        />
+        <CustomRadio type="checkbox" label="5 selected" />
         <Button
           variant="outlined"
           color="secondary"
