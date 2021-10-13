@@ -1,6 +1,7 @@
 import React, { FC, ChangeEvent, ReactNode } from 'react';
 import { TabProps, Tabs, TabsProps, Typography } from '@material-ui/core';
 import CustomTab from '../CustomTab';
+import { Scrollbars } from 'react-custom-scrollbars';
 import styles from './style';
 
 export type TabsType = TabProps & {
@@ -40,9 +41,9 @@ const CustomTabs: FC<CustomTabsProps> = ({ tabs, tab, setTab, ...rest }) => {
       </Tabs>
       {tabs.map(({ name, content }, index: number) => {
         return tab === name ? (
-          <div className={cls.panel} key={`tab-panel-${index}`}>
+          <Scrollbars autoHide thumbMinSize={30} className={cls.panel} key={`tab-panel-${index}`}>
             {content}
-          </div>
+          </Scrollbars>
         ) : null;
       })}
     </>

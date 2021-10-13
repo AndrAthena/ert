@@ -4,9 +4,12 @@ export default makeStyles((theme) => ({
   panel: {
     maxWidth: 400,
     flex: '0 0 400px',
-    padding: theme.spacing(2),
+    height: '100%',
     backgroundColor: '#fff',
     borderTopRightRadius: 10,
     borderBottomRightRadius: 10,
+    '&>div': {
+      padding: theme.spacing(2),
+    },
   },
 }));
